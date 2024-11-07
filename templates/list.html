@@ -1,0 +1,23 @@
+{% extends "layout.html"%}
+
+{%block body%}
+<link rel="stylesheet" href="/static/list.css">
+<h1>Current Tasks</h1>
+    
+    {% if tasks %}
+        <ul>
+            {% for task in tasks %}
+                <li>{{ task.content }}
+                    <!-- Delete button for each task -->
+                    <form action="{{ url_for('remove', task_id=task.id) }}" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h2>No tasks available</h2>
+    {% endif %}
+    <a href="{{ url_for('addtask')}}">Add New Task</a>
+
+{%endblock%}

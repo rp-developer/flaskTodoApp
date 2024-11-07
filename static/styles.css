@@ -1,0 +1,63 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: #f1f1f1;
+    color: #333;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Styling for the main container */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  header {
+    background: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  /* Styling for footer if needed */
+  footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* A subtle hover effect for clickable items like links or buttons */
+  a:hover, button:hover {
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  

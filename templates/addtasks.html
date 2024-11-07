@@ -1,0 +1,11 @@
+{%extends "layout.html"%}
+
+{%block body%}
+<link rel="stylesheet" href="/static/addtasks.css">
+<form action="/submit" method="post">
+
+    <input type="text" name="userinput" autofocus placeholder="Enter TODO" required>
+    <button type="submit">Submit</button>
+
+</form>
+{%endblock%}

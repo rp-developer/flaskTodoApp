@@ -1,0 +1,79 @@
+  /* Style for the page header */
+  h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Task list styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  li {
+    background: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+  }
+
+  /* Add more space between the task content and the delete button */
+  li span {
+    flex-grow: 1; /* Allow the task text to take up remaining space */
+    margin-right: 20px; /* Additional space between text and button */
+  }
+
+  /* Style for the delete button */
+  form {
+    margin-left: 20px; /* Add some left margin to create space between task and button */
+  }
+
+  form button {
+    background: #e74c3c;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+    font-size: 1rem;
+  }
+
+  form button:hover {
+    background: #c0392b;
+    transform: scale(1.05); /* Slight scale effect when hovered */
+  }
+
+  /* Link to add a new task */
+  a {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #3498db;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  a:hover {
+    background: #3498db;
+    color: #fff;
+  }
